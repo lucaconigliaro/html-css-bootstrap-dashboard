@@ -53,28 +53,31 @@
         <div class="container mt-5">
             <h2 class="py-3">Nuovo Libro</h2>
 
-
             <!-- Input Name -->
             <div class="row">
-                <div class="col">
+                <div class="col-6">
                     <label for="First name" class="form-label">Nome Autore</label>
                     <input type="text" id="First name" class="form-control" placeholder="Inserisci il nome dell'autore">
                 </div>
-                <div class="col">
+                <div class="col-6">
                     <label for="Last name" class="form-label">Cognome Autore</label>
-                    <input type="text" id="Last name" class="form-control" placeholder="Inserisci il cognome dell'autore">
+                    <input type="text" id="Last name" class="form-control"
+                        placeholder="Inserisci il cognome dell'autore">
                 </div>
             </div>
 
             <!-- Book title -->
-            <div class="col mt-3">
+            <div class="col-12 mt-3">
                 <label for="publication" class="form-label">Titolo</label>
                 <input type="text" id="publication" class="form-control" placeholder="Inserisci il titolo del libro">
             </div>
+            <div id="Italian version" class="form-text">
+                Titolo versione italiana
+            </div>
 
             <!-- Genre -->
-            <div class="row mt-3">
-                <div class="col-12">
+            <div class="row ">
+                <div class="col-12 col-md-4 mt-3">
                     <label for="genre" class="form-label">Genere</label>
                     <select id="genre" class="form-select" aria-label="genre">
                         <option selected>Scegli il genere</option>
@@ -85,27 +88,28 @@
                 </div>
 
                 <!-- Year of publication -->
-                <div class="col-12 mt-3">
+                <div class="col-12 col-md-4 mt-3">
                     <label for="Year publication" class="form-label">Anno di Pubblicazione</label>
                     <input type="text" id="Year publication" class="form-control" placeholder="Inserisci l'anno">
                 </div>
 
                 <!-- ISBN -->
-                <div class="col-12 mt-3">
+                <div class="col-12 col-md-4 mt-3">
                     <label for="isbn" class="form-label">ISBN#</label>
                     <input type="text" id="isbn" class="form-control" placeholder="Inserisci il codice ISBN#">
                 </div>
             </div>
 
-            <hr>
+            <hr class="my-5">
 
             <!-- Notes -->
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <div class="mb-3">
                         <label for="notes" class="form-label">Note</label>
-                        <textarea class="form-control" id="notes" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
-                      </div>
+                        <textarea class="form-control" id="notes" rows="3"
+                            placeholder="Inserisci eventuali note sul libro"></textarea>
+                    </div>
                 </div>
             </div>
 
@@ -122,6 +126,11 @@
         </div>
     </main>
     <!-- /Main -->
+
+     <!-- Javascript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+     crossorigin="anonymous"></script>
 </body>
 
 </html>
